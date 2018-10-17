@@ -1,6 +1,187 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>Developer Guide</title><link rel="stylesheet" href="./gh-pages.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="index.html">LearnV</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/CS2103-AY1819S1-T10-3/main."><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>Developer Guide</h1></div><div id="content"><div class="sect1">
+<h2 id="implemention"><a class="link" href="#implemention">Implemention</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Trivia:</strong></p>
+</div>
+<div class="paragraph">
+<p>The trivia function is facilitated by <code>LearnVocabulary</code>.
+Besides storing a <code>UniqueWordList</code>, <code>LearnVocabulary</code> also stores the current trivia question as <code>triviaQuestion</code>.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, it also implements the following operations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>setTrivia</code>&#8201;&#8212;&#8201;sets the trivia question based on the current vocabulary list</p>
+</li>
+<li>
+<p><code>getTrivia</code>&#8201;&#8212;&#8201;outputs the current trivia question.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These operations are exposed in the <code>Model</code> interface as <code>Model.setTrivia()</code> and <code>Model.getTrivia()</code>.</p>
+</div>
+<div class="paragraph">
+<p>Outlined below is how the trivia function operates at each step:</p>
+</div>
+<div class="paragraph">
+<p>Step 1. The user inputs trivia in the CLI.</p>
+</div>
+<div class="paragraph">
+<p>Step 2. <code>TriviaCommand.execute()</code> checks <code>lastShownList</code> to see if it is empty.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If <code>lastShownList</code> is empty, <code>TriviaCommand.execute()</code> will terminate and a message will be displayed to the user indicating that the user has to add words in before <code>trivia</code> can be used
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Step 3. <code>TriviaCommand.execute()</code> now calls <code>Model.setTrivia()</code> to set the trivia question within <code>LearnVocabulary</code>.</p>
+</div>
+<div class="paragraph">
+<p>Step 4. <code>TriviaCommand.execute()</code> calls <code>Model.getTrivia</code> and outputs to the user.</p>
+</div>
+<div class="paragraph">
+<p><strong>Answer</strong></p>
+</div>
+<div class="paragraph">
+<p>The answer command is indicated as <code>TriviaAnsCommand</code> in <code>commands</code>. It will take in arguments passed in by the user and checks whether it is the correct/wrong answer to the current trivia question.</p>
+</div>
+<div class="paragraph">
+<p>Outlined below is how the answer function operates:</p>
+</div>
+<div class="paragraph">
+<p>Step 1: User calls <code>answer</code> with his/her argument.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Attempting to call the <code>answer</code> command without first calling <code>trivia</code> will result in an error.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Step 2: <code>TriviaAnsCommandParser</code> processes the argument and parses it to <code>TriviaAnsCommand</code>.</p>
+</div>
+<div class="paragraph">
+<p>Step 3: <code>TriviaAnsCommand.execute()</code> checks the passed argument is the same word as <code>triviaQuestion</code> in <code>LearnVocabulary</code>.</p>
+</div>
+<div class="paragraph">
+<p>Step 4: Outputs a correct or wrong message based on the result in step 3.</p>
+</div>
+<div class="paragraph">
+<p><strong>Select</strong></p>
+</div>
+<div class="paragraph">
+<p>The select command is indicated as <code>SelectCommand</code> in <code>commands</code>, and inherits the <code>Command</code> class. It selects a word identified by a user using its index from the review list.</p>
+</div>
+<div class="paragraph">
+<p>Below is a description on how the select function operates:</p>
+</div>
+<div class="paragraph">
+<p>Step 1: User calls “select + [index]” where <code>index</code> is the index of the word that the user wants to select.</p>
+</div>
+<div class="paragraph">
+<p>Step 2: <code>SelectCommand</code> checks passed arguments.</p>
+</div>
+<div class="paragraph">
+<p>Step 3: If the user leaves out or in other ways enters an invalid index, <code>SelectCommand</code> throws an exception. Otherwise it returns the desired word.</p>
+</div>
+<div class="paragraph">
+<p><strong>groupadd</strong></p>
+</div>
+<div class="paragraph">
+<p>The select command is indicated as <code>GroupAddCommand</code> in <code>commands</code>, and inherits the <code>Command</code> class. It create a new group in which the uesr can put words.</p>
+</div>
+<div class="paragraph">
+<p>Below is a description on how the select function operates:</p>
+</div>
+<div class="paragraph">
+<p>Step 1: User calls “groupadd + [groupname]” where <code>groupname</code> is the name of the newly added group.</p>
+</div>
+<div class="paragraph">
+<p>Step 2: <code>GroupAddCommand</code> checks passed arguments.</p>
+</div>
+<div class="paragraph">
+<p>Step 3: If the user set a group name that has already existed, the system do nothing(no dublicate). Otherwise it creates a new group.</p>
+</div>
+<div class="paragraph">
+<p><strong>groupdelete</strong></p>
+</div>
+<div class="paragraph">
+<p>The select command is indicated as <code>GroupDeleteCommand</code> in <code>commands</code>, and inherits the <code>Command</code> class. It delete a group and all words in it.</p>
+</div>
+<div class="paragraph">
+<p>Below is a description on how the select function operates:</p>
+</div>
+<div class="paragraph">
+<p>Step 1: User calls “groupdelete + [groupname]” where <code>groupname</code> is the name of the desired deleted group.</p>
+</div>
+<div class="paragraph">
+<p>Step 2: <code>GroupDeleteCommand</code> checks passed arguments.</p>
+</div>
+<div class="paragraph">
+<p>Step 3: If the user set a group name that does not exist, the system throw an exception. Otherwise it deletes the assigned group. Especially, for those words which exist in this only deleted group, those words would also be deleted automately.</p>
+</div>
+<div class="paragraph">
+<p><strong>Show</strong></p>
+</div>
+<div class="paragraph">
+<p>The show command is indicated as <code>Show</code> in <code>commands</code>, and inherits the <code>Command</code> class. It is a more advanced version of <code>Find</code> in a sense that it displays the word&#8217;s definition on the Ui screen page.</p>
+</div>
+<div class="paragraph">
+<p>Below is a description on how the select function operates:</p>
+</div>
+<div class="paragraph">
+<p>Step 1: User wants to query a bunch of words and find out their meanings, tags altogether.</p>
+</div>
+<div class="paragraph">
+<p>Step 2: <code>ShowCommand</code> checks through the entire xml file and filters out the ones being typed.</p>
+</div>
+<div class="paragraph">
+<p>Step 3: The result is the list of filtered words, together with their definition and tags being displated.</p>
+</div>
+<div class="paragraph">
+<p><strong>Learn</strong></p>
+</div>
+<div class="paragraph">
+<p>The learn command is indicated as <code>Learn</code> in <code>commands</code>, and inherits the <code>Command</code> class. It enables the user to "learn" a word from the world wide web.</p>
+</div>
+<div class="paragraph">
+<p>Below is a description on how the select function operates:</p>
+</div>
+<div class="paragraph">
+<p>Step 1: User wants to learn this new word he just heard of, eg: Happiness</p>
+</div>
+<div class="paragraph">
+<p>Step 2: User would type the word followed by the command learn, eg: learn happiness</p>
+</div>
+<div class="paragraph">
+<p>Step 3: The word will be searched online, should it be successful, the word and meaning will be displayed on screen.</p>
+</div>
+<div class="paragraph">
+<p>Step 4: The word is then stored within the storage file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="target-user-profile"><a class="link" href="#target-user-profile">Target user profile</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -30,6 +211,15 @@
 </div>
 <div class="paragraph">
 <p>As a user, I want to check the meaning of words.</p>
+</div>
+<div class="paragraph">
+<p>As a non-native english speaker, I would like to classify words in different groups to manage them and learn them better.</p>
+</div>
+<div class="paragraph">
+<p>As a non-native english speaker, I would like to lookup the definition of words.</p>
+</div>
+<div class="paragraph">
+<p>As a non-native English speaker, I would like to learn words to improve my English.</p>
 </div>
 </div>
 </div>
@@ -125,22 +315,19 @@ Use case ends.</pre>
 <p>Use case ends</p>
 </div>
 <div class="paragraph">
-<p><strong>Multilingual Support:</strong></p>
+<p><strong>Learning Support:</strong></p>
 </div>
 <div class="paragraph">
-<p>User inputs command (multi)</p>
+<p>User inputs command (learn)</p>
 </div>
 <div class="paragraph">
-<p>A helper text will appear (multi chi (chinese), multi fr (french, multi…)</p>
+<p>User types in learn [word], the word will be queried online.</p>
 </div>
 <div class="paragraph">
-<p>User enters “multi chi”</p>
+<p>The definition of the entered word will be displayed and the user will learn it.</p>
 </div>
 <div class="paragraph">
-<p>System prompts for chinese words</p>
-</div>
-<div class="paragraph">
-<p>Chinese words will be translated into the English meaning</p>
+<p>The word is then saved within the storage, where it can be edited in the future if need be.</p>
 </div>
 <div class="paragraph">
 <p>Use case ends</p>
@@ -221,12 +408,10 @@ High (Need to have) - PPP, Medium (Nice to have) - PP, Low (Not very needed) - P
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">PP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">English speaker</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Play a game
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Improve my English further</p>
-<p class="tableblock">=======</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Play a game</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Improve my English further</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-16 06:19:11 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-17 15:57:59 UTC</div></div></div></body></html>
