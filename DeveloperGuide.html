@@ -141,10 +141,13 @@ Attempting to call the <code>answer</code> command without first calling <code>t
 <p>Step 3: If the user set a group name that does not exist, the system throw an exception. Otherwise it deletes the assigned group. Especially, for those words which exist in this only deleted group, those words would also be deleted automately.</p>
 </div>
 <div class="paragraph">
-<p><strong>Show</strong></p>
+<p><strong>Show implementation</strong></p>
 </div>
 <div class="paragraph">
-<p>The show command is indicated as <code>Show</code> in <code>commands</code>, and inherits the <code>Command</code> class. It is a more advanced version of <code>Find</code> in a sense that it displays the word&#8217;s definition on the Ui screen page.</p>
+<p>The show command is indicated as <code>Show</code> in <code>commands</code>, and inherits the <code>Command</code> class. It is a more advanced version of <code>Find</code> in a sense that it displays the word&#8217;s definition on the Ui screen page. The reason why this was created and <code>Find</code> was left alone was because we wanted to have more abstraction in terms of code.
+As for <code>find</code>, perhaps the team and I can find another purpose for it.
+As such, <code>Show</code> was implemented with a more Ui state of mind, to ensure the user&#8217;s ease of use when finding the words for display of their meanings as AddressBook level 4 did not cater to this particular arrangement.
+Moreover, it also encompasses multiple words, which meant that users can always pick and dump a whole bunch of words and it will filter out as needed, accordingly.</p>
 </div>
 <div class="paragraph">
 <p>Below is a description on how the select function operates:</p>
@@ -162,7 +165,24 @@ Attempting to call the <code>answer</code> command without first calling <code>t
 <p><strong>Learn</strong></p>
 </div>
 <div class="paragraph">
-<p>The learn command is indicated as <code>Learn</code> in <code>commands</code>, and inherits the <code>Command</code> class. It enables the user to "learn" a word from the world wide web.</p>
+<p>The learn command is indicated as <code>Learn</code> in <code>commands</code>, and inherits the <code>Command</code> class. It enables the user to "learn" a word from the world wide web. This command is delicate in the sense that it requires the use of Internet, should there be an absence of Internet connection, it has already been taken care of via throwing an Exception. There was a discussion to have an "Offline" version of the dictionary so that we can better attend to the tests, especially since it might be an offline environment.
+However, due to the lack of resources online and the fact that the API for dictionary only allows for 250 queries, we opted to do the online version instead.</p>
+</div>
+<div class="paragraph">
+<p>Functions added:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Dictionary#invoke()</code>&#8201;&#8212;&#8201;calls the main function of Dictionary which links it to LearnVocabulary</p>
+</li>
+<li>
+<p><code>Dictionary#isConnectedToInternet()</code>&#8201;&#8212;&#8201;checks to see if there is an Internet connection established.</p>
+</li>
+<li>
+<p><code>Dictionary#isWordInOnlineDictionary()</code>&#8201;&#8212;&#8201;checks to see if it is a valid word and if it exists in Dictionary.com</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Below is a description on how the select function operates:</p>
@@ -414,4 +434,4 @@ High (Need to have) - PPP, Medium (Nice to have) - PP, Low (Not very needed) - P
 </tbody>
 </table>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-17 15:57:59 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-17 16:11:01 UTC</div></div></div></body></html>
