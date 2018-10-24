@@ -8,7 +8,8 @@
 </div>
 <div class="paragraph">
 <p>The trivia function is facilitated by <code>LearnVocabulary</code>.
-Besides storing a <code>UniqueWordList</code>, <code>LearnVocabulary</code> also stores the current trivia question as <code>triviaQuestion</code>.</p>
+Besides storing a <code>UniqueWordList</code>, <code>LearnVocabulary</code> also stores the current trivia question as <code>triviaQuestion</code> and stores a list of trivia questions is <code>triviaQuestionList</code>.
+Scores for a trivia game are also stored using <code>currentScore</code> and <code>maxScore</code>.</p>
 </div>
 <div class="paragraph">
 <p>Additionally, it also implements the following operations:</p>
@@ -16,10 +17,25 @@ Besides storing a <code>UniqueWordList</code>, <code>LearnVocabulary</code> also
 <div class="ulist">
 <ul>
 <li>
-<p><code>setTrivia</code>&#8201;&#8212;&#8201;sets the trivia question based on the current vocabulary list</p>
+<p><code>setTriviaList</code>&#8201;&#8212;&#8201;sets the trivia question list based on the current vocabulary list</p>
+</li>
+<li>
+<p><code>setTrivia</code>&#8201;&#8212;&#8201;sets the trivia question based on <code>triviaQuestionList</code></p>
 </li>
 <li>
 <p><code>getTrivia</code>&#8201;&#8212;&#8201;outputs the current trivia question.</p>
+</li>
+<li>
+<p><code>updateScore</code>&#8201;&#8212;&#8201;adds 1 to the the`currentScore`</p>
+</li>
+<li>
+<p><code>clearTrivia</code>&#8201;&#8212;&#8201;clears the current trivia question as well as removing it from the <code>triviaQuestionList</code></p>
+</li>
+<li>
+<p><code>isTriviaMode</code>&#8201;&#8212;&#8201;a boolean to indicate whether the model is currently in trivia mode.</p>
+</li>
+<li>
+<p><code>toggleTriviaMode</code>&#8201;&#8212;&#8201;toggle trivia mode</p>
 </li>
 </ul>
 </div>
@@ -48,10 +64,25 @@ If <code>lastShownList</code> is empty, <code>TriviaCommand.execute()</code> wil
 </table>
 </div>
 <div class="paragraph">
-<p>Step 3. <code>TriviaCommand.execute()</code> now calls <code>Model.setTrivia()</code> to set the trivia question within <code>LearnVocabulary</code>.</p>
+<p>Step 3. <code>TriviaCommand.execute()</code> calls <code>toggleTriviaMode</code> to indicate that LearnVocabulary is in trivia mode.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+While in trivia mode, every command the user types will be parsed as <code>TriviaAnsCommand</code>. Trivia mode can be exited by either completing the trivia or typing "triviaExit"
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Step 4. <code>TriviaCommand.execute()</code> calls <code>Model.getTrivia</code> and outputs to the user.</p>
+<p>Step 4. <code>TriviaCommand.execute()</code> now calls <code>Model.setTriviaList()</code> to set the trivia question within <code>LearnVocabulary</code>.</p>
+</div>
+<div class="paragraph">
+<p>Step 5. <code>TriviaCommand.execute()</code> calls <code>Model.getTrivia()</code> and outputs to the user.</p>
 </div>
 <div class="paragraph">
 <p><strong>Answer</strong></p>
@@ -63,7 +94,7 @@ If <code>lastShownList</code> is empty, <code>TriviaCommand.execute()</code> wil
 <p>Outlined below is how the answer function operates:</p>
 </div>
 <div class="paragraph">
-<p>Step 1: User calls <code>answer</code> with his/her argument.</p>
+<p>Step 1: User enters  his/her argument.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -434,4 +465,4 @@ High (Need to have) - PPP, Medium (Nice to have) - PP, Low (Not very needed) - P
 </tbody>
 </table>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-22 10:19:25 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-24 04:16:37 UTC</div></div></div></body></html>
