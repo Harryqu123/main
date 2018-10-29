@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>Developer Guide</title><link rel="stylesheet" href="./gh-pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="index.html">LearnV</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/CS2103-AY1819S1-T10-3/main."><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>Developer Guide</h1></div><div id="content"><div class="sect1">
+<h2 id="target-user-profile"><a class="link" href="#target-user-profile">Target user profile</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>People who would like to learn new words they see in their daily life more efficiently and use computer a lot. These people can be for example non-native english speakers and schools who want to use the program in language courses. In the future, target users will be extended to also other languages than english.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="value-propositions"><a class="link" href="#value-propositions">Value propositions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The application helps the user to find the meaning of words. Upon finding the meaning of words, they will be stored into a “review list”, where the user can refresh their memory of the word that they had just learnt (similar to flash cards). In specific, we currently plan to give the user the meaning of the word and ask them to type the word correctly. If they can type in the word correctly for continuous several days, then the word will be deleted from the review list automatically. Besides, the user can also manually add words in the review list and delete words from the review list. In the end, this will help the user to learn the language.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="user-stories"><a class="link" href="#user-stories">User stories</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As a user, I want to be able to learn new English words everyday.</p>
+</div>
+<div class="paragraph">
+<p>As a user, I want to be able to save words so that I can "collect" those words and review what I have learnt.</p>
+</div>
+<div class="paragraph">
+<p>As a user, I want to test and challenge myself to improve my English.</p>
+</div>
+<div class="paragraph">
+<p>As a user, I want to check the meaning of words.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-cases"><a class="link" href="#use-cases">Use cases</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Add a word to the review list:</strong></p>
+</div>
+<div class="paragraph">
+<p>User enters a word to add to the review list.</p>
+</div>
+<div class="paragraph">
+<p>System checks if word exists in the dictionary and displays if the word could be successfully added or not. It also displays the meaning of the word.</p>
+</div>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+<div class="paragraph">
+<p><strong>Finding a word in the review list or in the dictionary:</strong></p>
+</div>
+<div class="paragraph">
+<p>User enters the word that he or she wants to look up</p>
+</div>
+<div class="paragraph">
+<p>System checks that the word exists in the dictionary and displays the meaning of the word.</p>
+</div>
+<div class="paragraph">
+<p>System also checks if the word is already in the review list and asks if the users wants to add it to the review list (if it is not already there).</p>
+</div>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+<div class="paragraph">
+<p><strong>Trivia mode:</strong></p>
+</div>
+<div class="paragraph">
+<p>MSS:
+User inputs command (trivia)</p>
+</div>
+<div class="paragraph">
+<p>System displays meaning of a selected word in user’s review list</p>
+</div>
+<div class="paragraph">
+<p>User enters the word which corresponds to the meaning displayed.</p>
+</div>
+<div class="paragraph">
+<p>System reveals the answer</p>
+</div>
+<div class="paragraph">
+<p>Repeat steps 2 - 4 until 10 questions have been displayed
+Use case ends</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Extensions:
+User’s review list is empty
+System displays that user’s review list is empty
+Use case ends.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Group words together</strong></p>
+</div>
+<div class="paragraph">
+<p>User inputs command (group)</p>
+</div>
+<div class="paragraph">
+<p>System responds with helper text (group [word] in [group])</p>
+</div>
+<div class="paragraph">
+<p>User enters “group gazelle in animals</p>
+</div>
+<div class="paragraph">
+<p>System groups the word “gazelle” in “animals”</p>
+</div>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+<div class="paragraph">
+<p><strong>List words individually from review list or groups</strong></p>
+</div>
+<div class="paragraph">
+<p>User inputs command (list)</p>
+</div>
+<div class="paragraph">
+<p>A helper text will appear (list, list [group], list [20 random entries])</p>
+</div>
+<div class="paragraph">
+<p>System would pull up the data from storage</p>
+</div>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+<div class="paragraph">
+<p><strong>Multilingual Support:</strong></p>
+</div>
+<div class="paragraph">
+<p>User inputs command (multi)</p>
+</div>
+<div class="paragraph">
+<p>A helper text will appear (multi chi (chinese), multi fr (french, multi…)</p>
+</div>
+<div class="paragraph">
+<p>User enters “multi chi”</p>
+</div>
+<div class="paragraph">
+<p>System prompts for chinese words</p>
+</div>
+<div class="paragraph">
+<p>Chinese words will be translated into the English meaning</p>
+</div>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+<div class="paragraph">
+<p><strong>Non functional requirements</strong></p>
+</div>
+<div class="paragraph">
+<p>Should work on any mainstream operating system as long as Java 9 or higher is installed.</p>
+</div>
+<div class="paragraph">
+<p>Works by command line input and possibly a minimalistic GUI output</p>
+</div>
+<div class="paragraph">
+<p>Handles at least one complete dictionary (e.g. english)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="appendix-a-user-stories"><a class="link" href="#appendix-a-user-stories">Appendix A: User Stories</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Priorities:
+High (Need to have) - PPP, Medium (Nice to have) - PP, Low (Not very needed) - P</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Priority</th>
+<th class="tableblock halign-left valign-top">As a&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">I want to&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">So that I can&#8230;&#8203;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PPP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-native English speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Search for the meaning of words</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Improve my English abilities</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PPP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-native English speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add/keep words that I have searched</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reference them easily to learn better</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PPP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-native English speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Play a game that would improve my English capabilities</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not get bored of the learning process and have fun at the same time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PPP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-native English speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refer to my native tongue while looking at English words</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Speed up the learning process much faster</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PPP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-native English speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Group words together</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refer to them easily in the future</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">English speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Look up words</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Learn the meanings of words</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">English speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Play a game
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Improve my English further</p>
+<p class="tableblock">=======</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-17 12:47:26 CST</div></div></div></body></html>

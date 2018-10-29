@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<learnvocabulary>
+    <words>
+        <name>hello</name>
+        <meaning>venom</meaning>
+        <tagged>okay</tagged>
+    </words>
+    <words>
+        <name>horse</name>
+        <meaning>Horse a large, solid-hoofed, herbivorous quadruped, Equus caballus, domesticated since prehistoric times, bred in a number of varieties, and used for carrying or pulling loads, for riding, and for racing.</meaning>
+        <tagged>okaylor</tagged>
+    </words>
+    <words>
+        <name>bye</name>
+        <meaning>Bye in a tournament, the preferential status of a player or team not paired with a competitor in an early round and thus automatically advanced to play in the next round: The top three seeded players received byes in the first round.</meaning>
+    </words>
+    <words>
+        <name>popcorn</name>
+        <meaning>Popcorn any of several varieties of corn whose kernels burst open and puff out when subjected to dry heat.</meaning>
+        <tagged>toLearn</tagged>
+    </words>
+    <words>
+        <name>bee</name>
+        <meaning>Bee any hymenopterous insect of the superfamily Apoidea, including social and solitary species of several families, as the bumblebees, honeybees, etc.</meaning>
+    </words>
+</learnvocabulary>

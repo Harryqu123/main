@@ -1,0 +1,663 @@
+10月 17, 2018 12:50:11 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 12:50:12 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 12:50:12 下午 seedu.learnvocabulary.commons.util.JsonUtil readJsonFile
+信息: Json file config.json not found
+10月 17, 2018 12:50:12 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 12:50:12 下午 seedu.learnvocabulary.commons.util.JsonUtil readJsonFile
+信息: Json file preferences.json not found
+10月 17, 2018 12:50:12 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 12:50:12 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 12:50:12 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 12:50:35 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 12:50:35 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 12:50:36 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 12:50:36 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 12:50:36 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 12:50:36 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 12:50:45 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 12:50:45 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 12:50:46 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 12:50:46 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 12:50:46 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 12:50:46 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 12:51:56 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 12:51:56 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 12:51:57 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 12:51:57 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 12:51:57 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 12:51:57 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 12:51:57 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 12:51:57 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 12:51:58 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 12:51:58 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 12:51:58 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 12:52:25 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 12:52:25 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 12:52:26 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 12:52:26 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 12:52:26 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 12:52:26 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 12:58:29 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 12:58:30 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 12:58:30 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 12:58:31 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 12:58:31 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 12:58:31 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 1:00:13 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:00:13 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:00:13 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:00:13 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:00:13 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 1:00:13 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 1:00:14 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:00:14 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:00:15 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:00:15 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:00:15 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:05:45 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:05:45 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:05:46 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:05:46 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:05:46 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 1:05:46 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 1:06:16 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:06:16 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:06:17 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:06:17 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:06:17 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 1:06:17 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 1:06:17 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:06:17 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:06:18 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:06:18 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:06:18 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:07:08 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:07:08 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:07:08 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:07:09 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:07:09 下午 seedu.learnvocabulary.storage.XmlLearnVocabularyStorage readLearnVocabulary
+信息: LearnVocabulary file data\learnvocabulary.xml not found
+10月 17, 2018 1:07:09 下午 seedu.learnvocabulary.MainApp initModelManager
+信息: Data file not found. Will be starting with a sample LearnVocabulary
+10月 17, 2018 1:08:26 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:08:26 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:08:27 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:08:27 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:08:28 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:08:28 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:08:28 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:08:28 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:08:29 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:10:12 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:10:12 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:10:12 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:10:13 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:10:13 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:10:13 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:10:14 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:10:14 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:10:14 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:11:41 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:11:41 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:11:41 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:11:42 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:11:43 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:11:43 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:11:43 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:11:43 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:11:43 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:15:16 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:15:16 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:15:17 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:15:17 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:15:18 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:15:18 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:15:18 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:15:18 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:15:19 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:17:22 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:17:22 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:17:22 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:17:23 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:17:24 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:17:24 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:17:25 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:17:25 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:17:25 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:21:05 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:21:05 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:21:05 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:21:06 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:21:06 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:21:06 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:21:08 下午 seedu.learnvocabulary.ui.UiManager start
+严重: null
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:21:08 下午 seedu.learnvocabulary.ui.UiManager showFatalErrorDialogAndShutdown
+严重: Fatal error during initializing nullnull
+java.lang.NullPointerException
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:31)
+	at seedu.learnvocabulary.ui.HelpWindow.<init>(HelpWindow.java:39)
+	at seedu.learnvocabulary.ui.MainWindow.<init>(MainWindow.java:77)
+	at seedu.learnvocabulary.ui.UiManager.start(UiManager.java:55)
+	at seedu.learnvocabulary.MainApp.start(MainApp.java:185)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:919)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$11(PlatformImpl.java:449)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$9(PlatformImpl.java:418)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:417)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+10月 17, 2018 1:21:08 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:26:13 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:26:13 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:26:14 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:26:14 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:26:15 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:26:15 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:26:25 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.WordPanelSelectionChangedEvent: WordPanelSelectionChangedEvent
+10月 17, 2018 1:26:25 下午 seedu.learnvocabulary.ui.BrowserPanel handleWordPanelSelectionChangedEvent
+信息: ---[Event handled][WordPanelSelectionChangedEvent]
+10月 17, 2018 1:26:27 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.WordPanelSelectionChangedEvent: WordPanelSelectionChangedEvent
+10月 17, 2018 1:26:27 下午 seedu.learnvocabulary.ui.BrowserPanel handleWordPanelSelectionChangedEvent
+信息: ---[Event handled][WordPanelSelectionChangedEvent]
+10月 17, 2018 1:26:29 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.WordPanelSelectionChangedEvent: WordPanelSelectionChangedEvent
+10月 17, 2018 1:26:29 下午 seedu.learnvocabulary.ui.BrowserPanel handleWordPanelSelectionChangedEvent
+信息: ---[Event handled][WordPanelSelectionChangedEvent]
+10月 17, 2018 1:26:30 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.WordPanelSelectionChangedEvent: WordPanelSelectionChangedEvent
+10月 17, 2018 1:26:30 下午 seedu.learnvocabulary.ui.BrowserPanel handleWordPanelSelectionChangedEvent
+信息: ---[Event handled][WordPanelSelectionChangedEvent]
+10月 17, 2018 1:27:05 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.ExitAppRequestEvent: ExitAppRequestEvent
+10月 17, 2018 1:27:05 下午 seedu.learnvocabulary.MainApp handleExitAppRequestEvent
+信息: ---[Event handled][ExitAppRequestEvent]
+10月 17, 2018 1:27:05 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 1:27:12 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 1:27:13 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 1:27:13 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 1:27:14 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 1:27:14 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 1:27:14 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 1:27:18 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.WordPanelSelectionChangedEvent: WordPanelSelectionChangedEvent
+10月 17, 2018 1:27:18 下午 seedu.learnvocabulary.ui.BrowserPanel handleWordPanelSelectionChangedEvent
+信息: ---[Event handled][WordPanelSelectionChangedEvent]
+10月 17, 2018 1:27:26 下午 seedu.learnvocabulary.logic.LogicManager execute
+信息: ----------------[USER COMMAND][learn bee]
+10月 17, 2018 1:27:28 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.model.LearnVocabularyChangedEvent: number of words 5
+10月 17, 2018 1:27:28 下午 seedu.learnvocabulary.storage.StorageManager handleLearnVocabularyChangedEvent
+信息: ---[Event handled][number of words 5]Local data changed, saving to file
+10月 17, 2018 1:27:28 下午 seedu.learnvocabulary.ui.StatusBarFooter handleLearnVocabularyChangedEvent
+信息: ---[Event handled][number of words 5]Setting last updated status to Wed Oct 17 13:27:28 CST 2018
+10月 17, 2018 1:27:28 下午 seedu.learnvocabulary.ui.CommandBox handleCommandEntered
+信息: Result: New word learnt: bee Meaning: Bee any hymenopterous insect of the superfamily Apoidea, including social and solitary species of several families, as the bumblebees, honeybees, etc. Tags: 
+
+10月 17, 2018 1:27:28 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.NewResultAvailableEvent: NewResultAvailableEvent
+10月 17, 2018 1:27:28 下午 seedu.learnvocabulary.ui.ResultDisplay handleNewResultAvailableEvent
+信息: ---[Event handled][NewResultAvailableEvent]
+10月 17, 2018 1:27:32 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.ExitAppRequestEvent: ExitAppRequestEvent
+10月 17, 2018 1:27:32 下午 seedu.learnvocabulary.MainApp handleExitAppRequestEvent
+信息: ---[Event handled][ExitAppRequestEvent]
+10月 17, 2018 1:27:32 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
+10月 17, 2018 2:12:38 下午 seedu.learnvocabulary.MainApp init
+信息: =============================[ Initializing LearnVocabulary ]===========================
+10月 17, 2018 2:12:39 下午 seedu.learnvocabulary.MainApp initConfig
+信息: Using config file : config.json
+10月 17, 2018 2:12:39 下午 seedu.learnvocabulary.MainApp initPrefs
+信息: Using prefs file : preferences.json
+10月 17, 2018 2:12:40 下午 seedu.learnvocabulary.commons.core.LogsCenter init
+信息: currentLogLevel: INFO
+10月 17, 2018 2:12:41 下午 seedu.learnvocabulary.MainApp start
+信息: Starting LearnVocabulary V0.6.0ea
+10月 17, 2018 2:12:41 下午 seedu.learnvocabulary.ui.UiManager start
+信息: Starting UI...
+10月 17, 2018 2:13:07 下午 seedu.learnvocabulary.logic.LogicManager execute
+信息: ----------------[USER COMMAND][groupadd test]
+10月 17, 2018 2:13:07 下午 seedu.learnvocabulary.ui.CommandBox handleCommandEntered
+信息: Result: Group [test] has been added
+10月 17, 2018 2:13:07 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.NewResultAvailableEvent: NewResultAvailableEvent
+10月 17, 2018 2:13:07 下午 seedu.learnvocabulary.ui.ResultDisplay handleNewResultAvailableEvent
+信息: ---[Event handled][NewResultAvailableEvent]
+10月 17, 2018 2:13:12 下午 seedu.learnvocabulary.logic.LogicManager execute
+信息: ----------------[USER COMMAND][add]
+10月 17, 2018 2:13:12 下午 seedu.learnvocabulary.ui.CommandBox handleCommandEntered
+信息: Invalid command: add
+10月 17, 2018 2:13:12 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.NewResultAvailableEvent: NewResultAvailableEvent
+10月 17, 2018 2:13:12 下午 seedu.learnvocabulary.ui.ResultDisplay handleNewResultAvailableEvent
+信息: ---[Event handled][NewResultAvailableEvent]
+10月 17, 2018 2:13:26 下午 seedu.learnvocabulary.logic.LogicManager execute
+信息: ----------------[USER COMMAND][groupdelete okay]
+10月 17, 2018 2:13:26 下午 seedu.learnvocabulary.ui.CommandBox handleCommandEntered
+信息: Result: Group [okay] has been deleted
+10月 17, 2018 2:13:26 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.NewResultAvailableEvent: NewResultAvailableEvent
+10月 17, 2018 2:13:26 下午 seedu.learnvocabulary.ui.ResultDisplay handleNewResultAvailableEvent
+信息: ---[Event handled][NewResultAvailableEvent]
+10月 17, 2018 2:13:29 下午 seedu.learnvocabulary.commons.core.EventsCenter post
+信息: ------[Event Posted] seedu.learnvocabulary.commons.events.ui.ExitAppRequestEvent: ExitAppRequestEvent
+10月 17, 2018 2:13:29 下午 seedu.learnvocabulary.MainApp handleExitAppRequestEvent
+信息: ---[Event handled][ExitAppRequestEvent]
+10月 17, 2018 2:13:29 下午 seedu.learnvocabulary.MainApp stop
+信息: ============================ [ Stopping LearnVocabulary ] =============================
